@@ -93,7 +93,7 @@ const drop = (index: number, e: Event) => {
     </div>
     <h1>{{ gamestatus }}</h1>
     <h2 v-if="gamestatus !== 'READY'">{{ gameInfo.counting }}</h2>
-    <div :style="{ width: puzzleWrapWidth, display: 'flex', flexWrap: 'wrap', padding: '10px' }">
+    <div :style="{ width: puzzleWrapWidth + 'px', display: 'flex', flexWrap: 'wrap', margin: '0 auto'}">
       <div draggable="true" @dragstart="dragstart(index, $event)" @drop="drop(index, $event)" ondragover="return false"
         v-for="puzzlechip, index of puzzleChips" :style="{
           background: `url(${puzzlechip.dataurl})`,
