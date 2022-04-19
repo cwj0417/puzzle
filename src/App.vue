@@ -99,8 +99,8 @@ const drop = (index: number, e: Event) => {
           background: `url(${puzzlechip.dataurl})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          width: ((puzzleWrapWidth - puzzleSize.x - 5) / puzzleSize.x) + 'px',
-          height: ((puzzleWrapWidth - puzzleSize.x - 5) / puzzleSize.x) * imgRadio + 'px',
+          width: ((puzzleWrapWidth - puzzleSize.x - 8) / puzzleSize.x) + 'px',
+          height: ((puzzleWrapWidth - puzzleSize.x - 8) / puzzleSize.x) * imgRadio + 'px',
           margin: '0 1px 1px 0'
         }" :key="puzzlechip.index" />
     </div>
